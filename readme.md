@@ -62,12 +62,14 @@ python -m ipykernel install --user --name=data_bootcamp_kernel2
 ![1](./images/Picture21.png)  
 
 ## Clone this repo
-Close and open the anaconda command prompt
+Close and open the anaconda command prompt.
+basic git config
 change to your user directory, and clone this repo
 ```
-c:
-cd Users\yourusername
 git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "MY_NAME@example.com"
-git clone blah
+
+c:
+cd Users\yourusername
+git clone https://github.com/philmassie/absa_data_bootcamp_2023.git
 ```
