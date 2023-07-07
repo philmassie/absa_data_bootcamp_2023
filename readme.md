@@ -67,5 +67,7 @@ change to your user directory, and clone this repo
 ```
 c:
 cd Users\yourusername
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
 git clone blah
 ```
