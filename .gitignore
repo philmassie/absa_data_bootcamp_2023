@@ -1,0 +1,5 @@
+maybes
+.ipynb*
+data/shalain
+*.pkl
+*.csv
