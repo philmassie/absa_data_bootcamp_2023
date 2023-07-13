@@ -83,3 +83,4 @@ python -m ipykernel install --user --name=absa_data_bootcamp_kernel
 
 - Click the Jupyter Notebooks Launch button, to run Jupyter in your browser
 - With luck this will default to your user directory, select absa_data_bootcamp_2023, and open the house_prices.ipynb file.
+
