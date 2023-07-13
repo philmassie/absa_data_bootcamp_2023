@@ -69,6 +69,7 @@ c:
 cd Users\yourusername\absa_data_bootcamp_2023
 # Update conda
 conda update -n base -c defaults conda
+conda init
 # install a nerw Anaconda environment using the supplied `environment.yml` 
 conda env create -f environment.yml
 # Activate the new environment
