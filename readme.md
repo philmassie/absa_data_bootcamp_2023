@@ -70,9 +70,9 @@ cd Users\yourusername\absa_data_bootcamp_2023
 # install a nerw Anaconda environment using the supplied `environment.yml` 
 conda env create -f environment.yml
 # Activate the new environment
-conda activate data_bootcamp
+conda activate absa_data_bootcamp
 # Create a new Jupyter kernel from the python environment. This allows Jupyter Notebooks to use the new Anaconda environment
-python -m ipykernel install --user --name=data_bootcamp_kernel
+python -m ipykernel install --user --name=absa_data_bootcamp_kernel
 ```
 
 
@@ -83,4 +83,3 @@ python -m ipykernel install --user --name=data_bootcamp_kernel
 
 - Click the Jupyter Notebooks Launch button, to run Jupyter in your browser
 - With luck this will default to your user directory, select absa_data_bootcamp_2023, and open the house_prices.ipynb file.
-
