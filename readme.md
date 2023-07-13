@@ -67,10 +67,12 @@ git clone https://github.com/philmassie/absa_data_bootcamp_2023.git
 # change to the project directory
 c:
 cd Users\yourusername\absa_data_bootcamp_2023
+# Update conda
+conda update -n base -c defaults conda
 # install a nerw Anaconda environment using the supplied `environment.yml` 
 conda env create -f environment.yml
 # Activate the new environment
-conda activate absa_data_bootcamp
+conda activate absa_data_bootcamp_2023
 # Create a new Jupyter kernel from the python environment. This allows Jupyter Notebooks to use the new Anaconda environment
 python -m ipykernel install --user --name=absa_data_bootcamp_kernel
 ```
