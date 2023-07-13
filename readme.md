@@ -70,12 +70,17 @@ cd Users\yourusername\absa_data_bootcamp_2023
 # Update conda
 conda update -n base -c defaults conda
 conda init
-# install a nerw Anaconda environment using the supplied `environment.yml` 
-conda env create -f environment.yml
+# Create a new Anaconda environment using the supplied `environment.yml` 
+conda create -y -n absa_data_bootcamp_2023 python=3.10
 # Activate the new environment
 conda activate absa_data_bootcamp_2023
+# Install packages
+conda install -y ipykernel numpy pandas scikit-learn seaborn lightgbm plotly ipywidgets statsmodels nbformat
+conda install -c conda-forge optuna
+
 # Create a new Jupyter kernel from the python environment. This allows Jupyter Notebooks to use the new Anaconda environment
 python -m ipykernel install --user --name=absa_data_bootcamp_kernel
+
 ```
 
 
