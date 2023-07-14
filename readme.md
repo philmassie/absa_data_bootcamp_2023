@@ -70,25 +70,47 @@ cd Users\yourusername\absa_data_bootcamp_2023
 # Update conda
 conda update -n base -c defaults conda
 conda init
-# Create a new Anaconda environment using the supplied `environment.yml` 
+```
+### Create a new Anaconda environment
+- Run the **Anaconda Powershell Prompt** (Start menu).
+```bash
+# Try using the supplied `environment.yml` 
+conda env create -f environment.yml -v
+conda activate absa_data_bootcamp_2023
+
+```
+- If the above fails, create the environment manually
+```bash
+# create the new clean environment
 conda create -y -n absa_data_bootcamp_2023 python=3.10
-# Activate the new environment
+# Activate the new environmentconda activate 
 conda activate absa_data_bootcamp_2023
 # Install packages
-conda install -y ipykernel numpy pandas scikit-learn seaborn lightgbm plotly ipywidgets statsmodels nbformat
+conda install -y ipykernel numpy pandas scikit-learn seaborn lightgbm plotly ipywidgets statsmodels nbformat jupyter
 conda install -c conda-forge optuna
 
-# Create a new Jupyter kernel from the python environment. This allows Jupyter Notebooks to use the new Anaconda environment
+```
+### Create a new Jupyter kernel from the python environment. 
+- Run the **Anaconda Powershell Prompt** (Start menu).
+- This allows Jupyter Notebooks to use the new Anaconda environment
+```bash
+# Activate the new environment
+conda activate absa_data_bootcamp_2023
 python -m ipykernel install --user --name=absa_data_bootcamp_kernel
-
 ```
 
 
 ## Launch Jupyter Notebooks
-- Run the Anaconda Navigator from the Start Menu
-
-![1](./images/Picture22.png)  
-
-- Click the Jupyter Notebooks Launch button, to run Jupyter in your browser
-- With luck this will default to your user directory, select absa_data_bootcamp_2023, and open the house_prices.ipynb file.
-
+- Run the **Anaconda Powershell Prompt** (Start menu).
+- This allows Jupyter Notebooks to use the new Anaconda environment 
+```bash
+# change to the project directory
+c:
+cd Users\yourusername\absa_data_bootcamp_2023
+# Activate the new environment
+conda activate absa_data_bootcamp_2023
+# Start Jupyter notebook server
+jupyter notebook
+```
+With any luck your browser will open a window in your project folder.
+- click the `house_prices.ipynb` file to open the notebook
